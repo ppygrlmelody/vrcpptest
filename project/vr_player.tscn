@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cs2m5ncadpbeb"]
+
+[node name="VRPlayer" type="VRPlayer" unique_id=1520650152]
+
+[node name="XRCamera3D" type="XRCamera3D" parent="." unique_id=442584931]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 0)
+
+[node name="LeftHand" type="XRController3D" parent="." unique_id=1308098079]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 1, 0)
+tracker = &"left_hand"
+
+[node name="RightHand" type="XRController3D" parent="." unique_id=543888883]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 1, 0)
+tracker = &"right_hand"
